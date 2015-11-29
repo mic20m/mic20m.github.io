@@ -141,7 +141,7 @@ body{
 	background-repeat:no-repeat;
 	background-position:0 -152px;
 	width:32px;
-	height:26px;
+	height:100px;
 }
 #page .header .footer .body #sidebar .footenote{
 	width:186px;
@@ -501,10 +501,10 @@ body{
 #feedback4 a:hover { 
   background: #06c; 
 }
-#gallery{
- width:95%;
- height: half of the width;
- position: relative;
-  top: -10px;
-  left: 20px;
- }
+/*#slides4
+{
+
+	max-width: 800px;
+    height: 800px;
+    
+}*/
