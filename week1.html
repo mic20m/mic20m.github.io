@@ -14,6 +14,7 @@
   <!-- CSS for slidesjs.com example -->
   <link rel="stylesheet" href="css/example.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
+
   <!-- End CSS for slidesjs.com example -->
 
   <!-- SlidesJS Optional: If you'd like to use this design -->
@@ -204,20 +205,48 @@
                        <h4>Week 1</h4>
                         
                         <p>Introduction</p><br><br><br><br><br><br><br><br>
-                        <font size="4">Vinyl Cutter</font>
-                        <p><B>Hi all </B></p>
-                        <p>INtro </p>
+                       
                     
 
 
 
  <font size="4">Day 2</font>
+
+<p>Documentation</p>
+Date, Machine used, Material (thickness, type, color…), Settings (speeds, feed rates...), Results (what worked, what didn’t), Debugging, Assignment: Document what you do every day.
+ 
+
+<p>Preparing Laptops and Lab Computers</p>
+
+
                         <p><B>Installations</B></p>
+                       <br> Creating Backups<br>
+Backup data to USB<br>
+Backup data to Cloud<br>
+Install latest Ubuntu Desktop LTS (currently 14.04)<br>
+Learn how to install software using Ubuntu software center<br>
+How to install software using apt-get<br>
+How to compile software<br>
+How to install windows software using wine<br>
+Basic command line for ubuntu<br>
+
                         <p>Download and install all softwares and packages for fablab<br></p>
                         installations -<br>
+
                        “Terminal here” addon for Nautilus<br>
+                       $ sudo apt-get install nautilus-open-terminal<br>$ sudo nautilus -q<br>
                         fab modules compiled version<br>
+
+                        The fab modules provide a set of software tools for personal fabrication, intended for use with machines common to fab labs.<br>
+
+It includes<br>
+
+Tools to design 2D and 3D objects<br>
+Functions to generate 2D and 3D toolpaths<br>
+GUIs workflow from design files to machine commands<br>
                         <p><a href="https://doc-08-8k-docs.googleusercontent.com/docs/securesc/fea83lvktifheci60ks9ugdgmn1l2712/m7o9ki5bo7rvn74fd9hnkfu9nfphoiio/1448827200000/17507068165429818296/10744297700431378276/0BzRX0YoH0d4OUHZhSVozc0kxOGM?e=download&nonce=imut6vfo0bnak&user=10744297700431378276&hash=5eqgknbnrigshqvdrg28ndkf0qrk8toj">Koko_retro.zip</a> </p><br>
+
+
 
 Instructions in kokompe web site http://kokompe.cba.mit.edu/<br>
 kokopelli retro<br>
@@ -226,12 +255,18 @@ kokopelli retro<br>
 
 Unzip the folder<br>
 Open folder in terminal<br>
-make fab<br>
-cd bin<br>
-./kokopelli -r<br>
+<div style="border-radius:10px; overflow: hidden; background-color:#ffffff;">
+<p> &nbsp&nbsp&nbsp&nbsp $ make fab </p> &nbsp&nbsp&nbsp&nbsp $ cd bin<br>
+  &nbsp&nbsp&nbsp&nbsp $  ./kokopelli -r <br>
+</div>
 
 <p><a href="https://github.com/mkeeter/antimony/blob/develop/BUILDING.md">Antimony</a> </p><br>
 
+Download and Install QT.Run the following code<br>
+chmod a+x filename<br>
+  ./filename<br><br><br>
+
+  <B>Also install .. </B><br>
 inkscape<br>
 openscad<br>
 gimp<br>
@@ -268,10 +303,32 @@ flicker                     : yahoo<br>
   sketchfab             : sketchfab.com/mic20m<br>
 
 
-Configure Git<br>
-https://pages.github.com/<br>
-git config --global user.name "YOUR NAME"<br>
-git config --global user.email "YOUR EMAIL ADDRESS"<br>
+  Documenting Via Git(HUB)<br>
+
+Installing and configuring Git , for a first time user.<br><br>
+
+  sudo apt-get install git <br>
+  git config --global user.name "mic20m"<br>
+  git config --global user.email mic20m@gmail.com<br>
+I had created mic20m.github.io repo , so for creating this page. One can create only one page and it should be in the format username.gihub.io<br>
+
+  git clone https://github.com/mic20m/mic20m.github.io<br>
+Any changes made in the local repo has to be pushed to the online repo. So if its the addition of readme file<br>
+
+  git add --all #an easy way to add files to the header.<br>
+  git commit -m -q #-q represent a quiet commit , the summary is skipped.<br>
+  git push -u origin master #pushing data to the branch master , authentication is required.<br><br>
+Creating and adding SSH Key<br><br>
+
+SSH Keys help in identifying machines holding local repo and hence help in skipping the prompt to enter account credentials".Go to the link for help.<br>
+
+  ssh-keygen -t rsa -b 4096 -C "akshai.kannan@gmail.com" #generate new ssh key, click enter and then a passphrase.<br>
+  eval "$(ssh-agent -s)"  #start ssh agent<br>
+  ssh-add ~/.ssh/id_rsa   #add key to agent , authentication required.<br>
+  sudo nano ~/.ssh/id_rsa.pub #use an editpr and copy the entire contents.<br><br> 
+In the GitHub account settings , the copied key is to be added in the "Key" field in the Add SSH Key option<br>
+
+
 
 if clone with https - password and username<br>
 ssh - private key,public key<br>
@@ -290,11 +347,10 @@ ssh - private key,public key<br>
   
 <div class="container">
   <div id="slides">
-      <img src="images/vinyl/1.jpg" alt="">
-      <img src="images/vinyl/2.jpg" alt="Photo by: Daniel Parks Link: http://www.flickr.com/photos/parksdh/5227623068/">
-      <img src="images/vinyl/3.jpg" alt="Photo by: Mike Ranweiler Link: http://www.flickr.com/photos/27874907@N04/4833059991/">
-      <img src="images/vinyl/4.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
-      <img src="images/vinyl/5.jpg" alt="Photo by: Stuart SeegerLink: http://www.flickr.com/photos/stuseeger/97577796/">
+      <img src="images/intro/day4.png" alt="">
+      <img src="images/intro/day4.png" alt="">
+
+      
     </div>
   </div>
 
